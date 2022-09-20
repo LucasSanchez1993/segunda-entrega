@@ -1,0 +1,218 @@
+/* reset */
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+ /* estilos de mi index */
+
+
+ nav{
+   background-color: #FD841F;
+   text-align: center;
+   font-family: sans-serif;
+   margin: 0.2rem;
+
+}
+
+/* estilos de menu */
+
+main{
+   background-image: url(../img/playalogo.jpg);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   padding: 2px;
+}
+
+main div{
+   width: 99%;
+
+}
+
+main h2{
+   color:#293462 ;
+
+}
+
+main .boton{
+   background-color:#1CD6CE ;
+   color: white;
+   padding: 0.5rem;
+   margin: 0.3rem;
+   box-shadow: 2px 2px 1px blue;
+   letter-spacing: 2px;
+   font-weight: bold;
+width: 40%;
+}
+
+/* estilos section */
+
+section{
+   display: none;
+}
+
+/* estilos de footer */
+
+footer{
+   background-color: #293462;
+   color:#F5EDDC ;
+   text-align: center;
+}
+
+/* media queris */
+
+@media screen and (min-width:600px) {
+   
+   header h1{
+      text-align: left;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   header div{
+      font-weight: bold;
+      justify-content: end;
+   }
+
+
+   /* estilos de main */
+   
+   main{
+     height: 65vh;
+      
+      display: grid;
+      grid-template-columns:2fr 2fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "h2 img"
+      "p img"
+      "boton img";
+      justify-content: center;
+      justify-items: center;
+   }
+
+   main h2{
+      grid-area: h2;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+   main p{
+      grid-area: p;
+      justify-content: left;
+    
+   }
+
+   main .boton{
+      grid-area: boton;
+      justify-content: left;
+   }
+
+   main img{
+      grid-area: img;
+      width: 65%;
+
+   }
+
+   /* estilos de section */
+
+   section{
+      display: block;
+      animation-name: color-fondo;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      display: flex;
+      justify-content: row;
+      padding: 1rem;
+      justify-content: center;
+
+  
+            
+      }
+@keyframes color-fondo {
+   0%{
+      background-color: #cee9e4;
+   }
+   50%{
+      background-color:#a5eee1 ;
+   }
+   100%{
+      background-color: #79f0da;
+   }
+   
+}
+
+section div img{
+   padding: 0.1rem;
+}
+
+   }
+
+
+
+/* estilos de cuenta */
+
+
+.cuentas{
+   background-color: aliceblue;
+   font-weight: bolder;
+   display: block;
+}
+
+.cuentasp{
+   color: blue;
+}
+
+.cuentaspp{
+   color: blue;
+}
+
+/* estilos de playas */
+
+.divp{
+   display: block;
+   display: flex;
+   flex-direction: column;
+   gap: 1px;
+   background-image: url(../img/playalogo.jpg);
+   gap: 0.1REM;
+   
+      }
+
+   .playas-uno{
+      background-color: #e5e756;
+      box-shadow: 1px 1px 1px black;
+      justify-content: space-around;
+
+   }   
+
+/* estilos de hoteles */
+
+
+.hoteles-menu{
+   display: flex;
+   flex-direction: column;
+   width: 99%;
+   background-color: #a5eee1;
+}
+
+.hoteles-uno{
+   background-color: #e5e756;
+   box-shadow: 1px 1px 1px black;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* estilos de nosotros */
+
+.nosotros-uno{
+background-color: #e5e756;
+}
+
+.nosotros-menu{
+   background-color: aquamarine;
+   display: block;
+   display: flex;
+   flex-direction: column;
+}
